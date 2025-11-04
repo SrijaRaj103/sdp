@@ -5,13 +5,13 @@ body, html {
 }
 
 .light {
-  background: #f7f7f7;
-  color: #333;
+  background: #f5f5f5;
+  color: #222;
 }
 
 .dark {
-  background: #222;
-  color: #eee;
+  background: #121212;
+  color: #f5f5f5;
 }
 
 .navbar {
@@ -27,11 +27,14 @@ body, html {
   list-style: none;
   display: flex;
   gap: 15px;
+  margin: 0;
+  padding: 0;
 }
 
 .navbar a {
   color: white;
   text-decoration: none;
+  font-weight: 500;
 }
 
 .navbar a:hover {
@@ -42,7 +45,7 @@ body, html {
   background: white;
   border: none;
   padding: 5px 10px;
-  border-radius: 5px;
+  border-radius: 6px;
   cursor: pointer;
 }
 
@@ -56,6 +59,7 @@ body, html {
   flex-wrap: wrap;
   justify-content: center;
   gap: 15px;
+  margin-top: 20px;
 }
 
 .card {
@@ -65,9 +69,56 @@ body, html {
   padding: 15px;
   width: 200px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: 0.3s;
 }
 
 .dark .card {
   background: #333;
   color: white;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.info-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.info-card {
+  background: white;
+  color: black;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.dark .info-card {
+  background: #333;
+  color: white;
+}
+
+.search {
+  padding: 8px;
+  width: 250px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  margin: auto;
+  gap: 10px;
+}
+
+button {
+  cursor: pointer;
 }
